@@ -51,35 +51,6 @@ The BSPD operates based on **simultaneous condition detection**:
 
 ---
 
-## 🔢 Design Calculations
-
-### ⚡ Power to Current Conversion
-\[
-I = \frac{P}{V} = \frac{5000}{400} = 12.5A
-\]
-
-### 🔌 Sensor Voltage Thresholds
-- Current threshold → **1.25 V**  
-- Brake threshold → **3.0 V**
-
----
-
-## ⏱ RC Delay Mechanism
-
-The delay is implemented using an RC charging circuit:
-
-\[
-V(t) = V_{cc}(1 - e^{-t/RC})
-\]
-
-- R = 100kΩ  
-- C = 4.7µF  
-- Delay ≈ **470 ms**
-
-👉 Prevents false triggering due to transient noise  
-
----
-
 ## 🔗 Logic Implementation
 
 Let:
